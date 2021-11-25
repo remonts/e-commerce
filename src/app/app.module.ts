@@ -5,18 +5,18 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { CartComponent } from './component/cart/cart.component';
 import { ProductsComponent } from './component/products/products.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CartComponent,
-    ProductsComponent
+    ProductsComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

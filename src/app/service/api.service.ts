@@ -1,9 +1,19 @@
+import { Product } from './../component/products/product';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
+  constructor(private http: HttpClient) {}
 
-  constructor() { }
+  getProduct() {
+    return this.http.get<Product>('https://fakestoreapi.com/products').pipe(
+      map((res: any) => {
+        return res;
+      })
+    );
+  }
 }
