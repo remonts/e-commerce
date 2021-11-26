@@ -11,11 +11,11 @@
 }
 
 .item img {
-  width: 64px;
+  width: 3.75rem;
 }
 
 .item {
-  margin: 0px 15px;
+  margin: 0rem 0.625rem;
   text-align: center;
 }
 
@@ -24,15 +24,18 @@
 }
 
 .card {
-  padding: 20px;
-  margin: 50px;
+  padding: 1.75rem;
+  margin: 2.75rem;
 }
 
 .card img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 15px;
+  width: 12.5rem;
+  height: 12.5rem;
+  margin-bottom: 0.938rem;
   transition: 0.3s ease-in-out;
 }
 
-
+.card img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
